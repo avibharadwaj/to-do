@@ -1,0 +1,88 @@
+<!-- A simple to do app for tasks. The aim is to make use of local storage. Retrieving values from the local storage. Options for users would include 1. Adding a new task.
+					2. Deleting a new task.
+					3. Adding completed tasks to a list of completed tasks from which the user can add it back to pending tasks if 		needed.
+					4. Try and schedule tasks for a particular day.
+					
+
+
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ToDo version 1.0</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+
+
+<body onload="fetchTasks();fetchCoTasks();">
+	<br>
+	<header>
+		<div class="container"> 
+		<h1 class="firstHeader">What do you want to do?</h1>
+		</div> 
+	</header>
+
+	<section>
+		<div class="container">
+		<form id="myForm">
+			<div class="form-group">
+			<label><h3 class="taskcolor">Add a Task!</h3></label>
+			<input type="text" class="form-control" id="taskName" placeholder="Write it here....">
+			</div>
+		<!--<button type="submit" class="submit1">Submit</button> -->
+		</form>
+		</div>
+	</section>
+<br>
+	<section>
+		<div class="container1">
+			<h1 class="pendingTasks">Tasks pending </h1>
+        	<div class="col-lg-12">
+          		<div id="tasksResults">
+          			<form>
+          			<div class="form-check">
+    <!--<input type="checkbox" class="form-check-input" id="exampleCheck1"> 
+    <label class="form-check-label" for="exampleCheck1"></label> -->
+  					</div>
+  					</form>
+          		</div>
+        	</div>
+        </div>
+	</section>
+<br>
+
+<section>
+		<div class="container1">
+			<h1 class="pendingTasks">Completed Tasks </h1>
+        	<div class="col-lg-12">
+          		<div id="tasksCoResults">
+          			<form>
+          			<div class="form-check">
+    <!--<input type="checkbox" class="form-check-input" id="exampleCheck1"> 
+    <label class="form-check-label" for="exampleCheck1"></label> -->
+  					</div>
+  					</form>
+          		</div>
+        	</div>
+        </div>
+	</section>
+	
+	<footer class="footer">
+		<p>&copy; 2018 ToDo app,by Avinash Shankar Bharadwaj.</p>
+	</footer>
+
+	<script
+  	src="http://code.jquery.com/jquery-3.3.1.js"
+  	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  	crossorigin="anonymous"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
